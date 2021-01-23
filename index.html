@@ -502,12 +502,22 @@
             </li>
           </ul>
         </div>
-        <form action="">
+        <form name="mail-form" class="mail-form" autocomplete="on">
           <h2>Подпишитесь на рассылку</h2>
-          <label for="">
-            <input type="" placeholder="E-mail" />
+          <label for="email" class="mail-label">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="mail-input"
+            />
           </label>
-          <button>Подписаться</button>
+          <button type="submit" class="mail-send">
+            Подписаться
+            <svg class="mail-icon">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>

@@ -561,7 +561,7 @@ header {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
 }
 
 .footer-box {
@@ -597,6 +597,7 @@ header {
 
 .footer-social {
   display: inline-block;
+  margin-top: 12px;
 }
 
 footer h2 {
@@ -621,6 +622,66 @@ footer h2 {
   background: var(--accent-color);
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+}
+
+.mail-form {
+  display: block;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* .mail-form > h2 {
+  margin: 0;
+} */
+
+/* .mail-label {
+  width: 358px;
+  height: 50px;
+} */
+
+.mail-input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--darck-background-color);
+  font-size: 16px;
+  line-height: 1, 25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-send {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  padding-left: 30px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 87;
+}
+
+.mail-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
 }
 
 /* Страница 2 - Portfolio.html */

@@ -144,7 +144,7 @@ header {
 
   width: 100%;
   height: 4px;
-  background: #2196f3;
+  background: var(--accent-color);
   border-radius: 2px;
   opacity: 0;
   transition-duration: var(--duration);
@@ -331,12 +331,18 @@ header {
   fill: #000000;
 }
 
+.icon-close:hover,
+.modal-close:focus .icon-close {
+  fill: var(--accent-color);
+}
 /* Форма заполнения */
 
 .form-input {
+  position: relative;
   width: 450px;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -356,7 +362,14 @@ textarea.form-input {
 
   color: rgba(117, 117, 117, 0.5);
 }
-/* */
+
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
 
 .contact-form h2 {
   margin-bottom: 12px;
@@ -378,6 +391,7 @@ textarea.form-input {
 }
 
 .agreement {
+  position: relative;
   display: block;
   margin-bottom: 30px;
 }
@@ -397,12 +411,13 @@ textarea.form-input {
 
 .agreement-text a {
   text-decoration: underline;
+  color: var(--accent-color);
 }
 
 .submit-form {
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -413,6 +428,29 @@ textarea.form-input {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+.form-label {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+
+.icon-not-check,
+.agreement-check:checked ~ .icon-check {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+}
+
+.icon-check,
+.agreement-check:checked ~ .icon-not-check {
+  display: none;
 }
 
 /* Блок преимущества и услуги */
@@ -751,7 +789,7 @@ footer h2 {
   height: 50px;
   padding-left: 30px;
 
-  background: #2196f3;
+  background: #var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;

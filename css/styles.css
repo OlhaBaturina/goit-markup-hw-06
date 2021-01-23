@@ -909,10 +909,10 @@ footer h2 {
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  font-style: regular;
+  font-style: normal;
   font-size: 18px;
   line-height: 1.56;
-  fill: Solid;
+
   color: #ffffff;
 
   transform: translateY(100%);

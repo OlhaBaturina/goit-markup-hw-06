@@ -341,7 +341,7 @@ header {
   position: relative;
   width: 450px;
   height: 40px;
-  margin-bottom: 10px;
+
   padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -383,7 +383,8 @@ textarea.form-input {
   color: #212121;
 }
 
-.contact-form p {
+.form-text {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -439,12 +440,14 @@ textarea.form-input {
 
 .form-label {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .form-icon {
   position: absolute;
-  top: 14px;
+  bottom: 14px;
   left: 14px;
+  /* transform: translateY(50%); */
 }
 
 .icon-not-check,

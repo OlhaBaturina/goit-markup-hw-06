@@ -105,9 +105,10 @@
                 <h2>Оставьте свои данные, мы вам перезвоним</h2>
                 <ul>
                   <li>
-                    <label for="user-name" class="form">
-                      <p>Имя</p>
-                      <div class="form-label">
+                    <div class="form-label">
+                      <label for="user-name">
+                        <span class="form-text">Имя</span>
+
                         <input
                           class="form-input"
                           type="text"
@@ -119,13 +120,15 @@
                             href="./images/symbol-defs.svg#icon-person"
                           ></use>
                         </svg>
-                      </div>
-                    </label>
+                      </label>
+                    </div>
                   </li>
+
                   <li>
-                    <label for="phone_number" class="form">
-                      <p>Телефон</p>
-                      <div class="form-label">
+                    <div class="form-label">
+                      <label for="phone_number">
+                        <span class="form-text">Телефон</span>
+
                         <input
                           class="form-input"
                           type="tel"
@@ -137,13 +140,14 @@
                             href="./images/symbol-defs.svg#icon-telefone"
                           ></use>
                         </svg>
-                      </div>
-                    </label>
+                      </label>
+                    </div>
                   </li>
                   <li>
-                    <label for="email" class="form">
-                      <p>Почта</p>
-                      <div class="form-label">
+                    <div class="form-label">
+                      <label for="email">
+                        <span class="form-text">Почта</span>
+
                         <input
                           class="form-input"
                           type="email"
@@ -153,13 +157,13 @@
                         <svg class="form-icon" width="15" height="15">
                           <use href="./images/symbol-defs.svg#icon-email"></use>
                         </svg>
-                      </div>
-                    </label>
+                      </label>
+                    </div>
                   </li>
 
                   <li>
-                    <label for="feedback" class="form">
-                      <p>Комментарий</p>
+                    <label for="feedback">
+                      <span class="form-text">Комментарий</span>
                       <textarea
                         class="form-input"
                         name="feedback"
@@ -171,7 +175,7 @@
                     </label>
                   </li>
                 </ul>
-                <label for="agreement" class="agreement" class="form">
+                <label for="agreement" class="agreement">
                   <input
                     class="agreement-check visually-hidden"
                     type="checkbox"
@@ -594,7 +598,7 @@
         </div>
         <form name="mail-form" class="mail-form" autocomplete="on">
           <h2>Подпишитесь на рассылку</h2>
-          <label for="email" class="mail-label">
+          <label class="mail-label">
             <input
               type="email"
               name="email"

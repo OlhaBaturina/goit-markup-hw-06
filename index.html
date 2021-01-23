@@ -135,7 +135,6 @@
                         class="form-input"
                         type="email"
                         name="email"
-                        placeholder=""
                         id="email"
                       />
                     </label>
@@ -150,13 +149,14 @@
                         id="feedback"
                         cols="30"
                         rows="10"
+                        placeholder="Введите текст"
                       ></textarea>
                     </label>
                   </li>
                 </ul>
-                <label for="agreement">
+                <label for="agreement" class="agreement">
                   <input
-                    class="agreement-check"
+                    class="agreement-check visually-hidden"
                     type="checkbox"
                     name="agreement"
                     id="agreement"
@@ -166,6 +166,7 @@
                     <a href="#"> Условия договора</a>
                   </span>
                 </label>
+                <button type="submit" class="submit-form">Отправить</button>
               </form>
             </div>
           </div>

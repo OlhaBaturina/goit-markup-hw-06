@@ -101,6 +101,72 @@
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
               </button>
+              <form name="contact-form" autocomplete="on" class="contact-form">
+                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                <ul>
+                  <li>
+                    <label for="user-name">
+                      <p>Имя</p>
+                      <input
+                        class="form-input"
+                        type="text"
+                        name="user-name"
+                        placeholder=""
+                        id="user-name"
+                      />
+                    </label>
+                  </li>
+                  <li>
+                    <label for="phone_number">
+                      <p>Телефон</p>
+                      <input
+                        class="form-input"
+                        type="tel"
+                        name="phone_number"
+                        placeholder=""
+                        id="phone_number"
+                      />
+                    </label>
+                  </li>
+                  <li>
+                    <label for="email">
+                      <p>Почта</p>
+                      <input
+                        class="form-input"
+                        type="email"
+                        name="email"
+                        placeholder=""
+                        id="email"
+                      />
+                    </label>
+                  </li>
+
+                  <li>
+                    <label for="feedback">
+                      <p>Комментарий</p>
+                      <textarea
+                        class="form-input"
+                        name="feedback"
+                        id="feedback"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </label>
+                  </li>
+                </ul>
+                <label for="agreement">
+                  <input
+                    class="agreement-check"
+                    type="checkbox"
+                    name="agreement"
+                    id="agreement"
+                  />
+                  <span class="agreement-text">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="#"> Условия договора</a>
+                  </span>
+                </label>
+              </form>
             </div>
           </div>
         </div>

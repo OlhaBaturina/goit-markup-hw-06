@@ -363,7 +363,9 @@ textarea.form-input {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-input:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
   border-color: var(--accent-color);
 }
 
@@ -428,6 +430,11 @@ textarea.form-input {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+.submit-form:hover,
+.submit-form:focus {
+  background: #188ce8;
 }
 
 .form-label {

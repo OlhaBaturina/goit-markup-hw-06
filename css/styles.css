@@ -325,14 +325,15 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .modal-close .icon-close {
   fill: #000000;
 }
 
-.icon-close:hover,
-.modal-close:focus .icon-close {
+.modal-close:hover > .icon-close,
+.modal-close:focus > .icon-close {
   fill: var(--accent-color);
 }
 /* Форма заполнения */

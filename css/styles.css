@@ -349,6 +349,11 @@ header {
   border-radius: 4px;
 }
 
+.feedback {
+  display: block;
+  margin-bottom: 20px;
+}
+
 textarea.form-input {
   height: 120px;
   resize: none;
